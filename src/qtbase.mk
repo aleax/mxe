@@ -49,16 +49,15 @@ define $(PKG)_BUILD
             -accessibility \
             -nomake examples \
             -nomake tests \
-            -plugin-sql-mysql \
+            -no-sql-mysql \
             -mysql_config $(PREFIX)/$(TARGET)/bin/mysql_config \
-            -plugin-sql-sqlite \
-            -plugin-sql-odbc \
+            -no-sql-sqlite \
+            -no-sql-odbc \
             -plugin-sql-psql \
-            -plugin-sql-tds -D Q_USE_SYBASE \
+            -no-sql-tds -D Q_USE_SYBASE \
             -system-zlib \
             -system-libpng \
             -system-libjpeg \
-            -system-sqlite \
             -fontconfig \
             -system-freetype \
             -system-harfbuzz \
